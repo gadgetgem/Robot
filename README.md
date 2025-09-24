@@ -30,3 +30,6 @@ If a subsequent robot is recorded as lost then it will ignore the last command a
 
 # Further Considerations
 What happens if two robots if two robots try to occupy the same square?
+Add logging
+Consider bottlenecks 
+Api retry with Polly
