@@ -1,0 +1,33 @@
+@MarsRobot.Api_HostAddress = https://localhost:7045
+
+
+POST {{MarsRobot.Api_HostAddress}}/robot
+Content-Type: application/json
+
+{
+  "grid": {
+    "maxX": 5,
+    "maxY": 3
+  },
+  "robots": [
+    {
+      "startPosition": {
+        "x": 1,
+        "y": 1,
+        "orientation": "E"
+      },
+      "commands": "RFRFRFRF"
+    },
+    {
+      "startPosition": {
+        "x": 3,
+        "y": 2,
+        "orientation": "N"
+      },
+      "commands": "FRRFLLFFRRFLL"
+    }
+  ]
+}
+
+
+###
