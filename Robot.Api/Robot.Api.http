@@ -1,0 +1,25 @@
+@Robot.Api_HostAddress = https://localhost:7169
+
+
+POST {{Robot.Api_HostAddress}}/api/robot/move
+Content-Type: application/json
+
+{
+  "gridSize": { "MaxY": 5, "height": 3 },
+  "robots": [{ "robotStart": {
+                  "x": 1, 
+                  "y": 1, 
+                  "orientation": "E"},
+              "commands":"RFRFRFRF" },
+              { "robotStart": {
+                  "x": 3, 
+                  "y": 2, 
+                  "orientation": "N"},
+              "commands":"FRRFLLFFRRFLL" },
+              { "robotStart": {
+                  "x": 0, 
+                  "y": 3, 
+                  "orientation": "W"},
+              "commands":"LLFFFLFLFL" }
+  ]
+}
